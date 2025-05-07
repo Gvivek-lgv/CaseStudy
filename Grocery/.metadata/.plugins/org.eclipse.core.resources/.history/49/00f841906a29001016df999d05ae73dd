@@ -1,0 +1,28 @@
+package com.ibm.model;
+
+
+import jakarta.persistence.*;
+
+@Entity
+public class User {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String firstname;
+    private String lastname;
+    private String email;
+    private String password;
+    private String dob;
+    private String phone;
+    private String address;
+    private boolean locked = false;
+    private int failedLoginAttempts = 0;
+    private double funds;
+
+    // Getters and Setters
+}
+
+
+}
